@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentooth system</title>
+    <link rel="stylesheet" href="../public/styles.css">
+</head>
+<body>
+    <header>
+        <button class="Home">
+            <img src="../Imagenes/Diente.png" alt="Home">
+        </button>
+        <h1 class="Titulo-principal">Dentooth System</h1>
+    </header>
+
+    <main class="Contenido">
+        <section class="Formulario-inicio">
+            <form id="formInicio">
+                <div class="grupo-Usuario">
+                    <label for="Usuario">Usuario</label>
+                    <input type="text" id="Usuario" name="Usuario" placeholder="nombre o correo">
+                </div>
+                
+                <div class="grupo-password">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="contraseña">
+                </div>
+                
+                <div class="grupo-recuerdame">
+                    <input type="checkbox" id="recuerdame">
+                    <label for="recuerdame">Recuérdame</label>
+                </div>
+
+    
+                <p id="mensajeError" style="color: red; display: none; margin: 5px 0; font-size: 0.9rem;"></p>
+
+                <button type="submit" class="Boton-Ingresar">Ingresar</button>
+
+                <div class="Fila-enlaces">
+                    <a href="#" class="sub-1">Recuperar contraseña</a>
+                    <a href="#" class="sub-2">Registrarse</a>
+                </div>
+                <a href="#" class="sub-3">¿Ayuda?</a>
+            </form>
+        </section>
+
+        <section class="Imagen-ppal">
+            <img src="../Imagenes/Consultorio.jpg" alt="Consultorio">
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenido-pie-de-pagina">
+            <p>&copy; 2026 Dentooth System.</p>
+            <div class="creditos">
+                <span>Desarrollado por: Carlos Fernando Muñoz</span>
+                <img src="../Imagenes/fasm tech.png" alt="Fasmtech-logo" class="Fasmtech-logo">
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="../public/main.js" defer></script>
+</body>
+</html>

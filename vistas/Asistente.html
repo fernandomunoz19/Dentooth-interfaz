@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentooth system</title>
+    <link rel="stylesheet" href="../public/styles.css">
+</head>
+<body>
+    <button class="Home">
+            <img src="../Imagenes/Diente.png" alt="Home">
+        </button>
+    <main class="Contenido">
+        <nav class="Menu-paciente">
+            <h3>Asistente</h3>
+            <ul>
+                <li><a href="Crear-paciente">Crear paciente</a></li>
+                <li><a href="Actualizar-datos">Actualizar datos</a></li>
+                <li><a href="Agenda">Agenda</a></li>
+                <li><a href="Pacientes">Paciente</a></li>
+                <li><a href="odontologos">Odontologos</a></li>
+                <li><a href="Facturacion">Facturacion</a></li>
+                <li><a href="Reportes">Reportes</a></li>
+            </ul>
+
+        </nav>
+            <h3 class = "titulo-registro">Registro pacientes</h3>
+
+<form action="#" id="formPaciente" class="formulario-dos-columnas">
+
+        <!-- Columna 1 (Izquierda) -->
+        <div class="columna">
+            <div class="registro-paciente">
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" name="nombres">
+            </div>
+
+            <div class="registro-paciente">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos">
+            </div>
+
+            <div class="registro-paciente">
+                <label for="cedula">Cedula</label>
+                <input type="tel" id="cedula" name="cedula">
+            </div>
+
+            <div class="registro-paciente">
+                <label for="direccion">Direccion</label>
+                <input type="text" id="direccion" name="direccion">
+            </div>
+
+            <div class="registro-paciente">
+                <label for="celular">Celular</label>
+                <input type="tel" id="celular" name="celular">
+            </div>
+
+            <div class="registro-paciente">
+                <label for="fecha_nacimiento">F. Nacimiento</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            </div>
+
+            <div class="registro-paciente">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo">
+            </div>
+
+            <div class="registro-paciente">
+                <label for="genero">Genero</label>
+                <select name="genero" id="genero">
+                    <option value="masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            
+            <div class="registro-paciente">
+                <label for="eps">EPS</label>
+                <input type="text" id="eps" name="eps">
+            </div>
+            <div class="registro-paciente">
+                <label for="contacto_emergencia">contact.emergen</label>
+                <input type="tel" id="contacto_emergencia" name="contacto_emergencia">
+            </div>
+        </div>
+
+        <div class="registro-paciente">
+                <label for="numero_emergencia">tel. Emergen</label>
+                <input type="text" id="numero_emergencia" name="numero_emergencia">
+            </div>
+
+            <div class="registro-paciente">
+                <label for="observacion">Observaciones</label>
+                <input type="text" id="observaciones" name="observaciones">
+            </div>
+        </div>
+
+    
+
+    <!-- Botones abajo al centro -->
+    <div class="botones-formulario">
+        <button type="button" class="Boton-cancelar">Cancelar</button>
+        <button type="submit" class="Agendar">Guardar</button>
+    </div>
+
+</form>
+    </main>
+    <footer>
+    <div class="contenido-pie-de-pagina">
+        <p>&copy; 2026 Dentooth System.</p>
+        <div class="creditos">
+            <span>Desarrollado por: Carlos Fernando Muñoz</span>
+            <img src="../Imagenes/fasm tech.png" alt="Fasmtech-logo" class="Fasmtech-logo">
+        </div>
+    </div>
+</footer>
+<script src = "../public/Asistente.js"></script>
+</body>
+</html>

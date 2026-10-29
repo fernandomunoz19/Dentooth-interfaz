@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dentooth system</title>
+    <link rel="stylesheet" href="../public/styles.css" />
+  </head>
+  <body>
+    <button class="Home">
+      <img src="../Imagenes/Diente.png" alt="Home" />
+    </button>
+    <main class="Contenido">
+      <nav class="Menu-paciente">
+        <h3>Paciente</h3>
+        <ul>
+          <li><a href="usuario.html">Agendar citas</a></li>
+          <li><a href="Historia-clinica.html">Historia clinica</a></li>
+          <li><a href="Mi-perfil.html">Mi perfil</a></li>
+          <li><a href="Documentos.html">Documentos</a></li>
+          <li><a href="Mis-facturas.html">Mis facturas</a></li>
+          <li><a href="Notificaciones.html">Notificaciones</a></li>
+        </ul>
+      </nav>
+      <form action="#" id="formCita">
+        <h3>Agendar cita</h3>
+        <div class="grupo-cita">
+          <label for="Especialidad">Especialidad</label>
+          <select name="Especialidad" id="Especialidad">
+            <option value="general">Odontologia general</option>
+            <option value="higiene">Fase higienica</option>
+            <option value="rehabilitacion">Rehabilitacion</option>
+            <option value="general">Primera vez</option>
+            <option value="general">Control</option>
+          </select>
+        </div>
+
+        <div class="grupo-cita">
+          <label for="Fecha">Fecha</label>
+          <input type="date" id="fechaCita" />
+          <!-- Añadimos el id -->
+        </div>
+
+        <div class="grupo-cita">
+          <label for="Hora">Hora</label>
+          <input type="time" id="horaCita" />
+        </div>
+
+        <div class="grupo-cita">
+          <label for="odontologo">Odontologo</label>
+          <select name="odontologo" id="odontologo">
+          <option value="">Selecciona un odontólogo</option> 
+        </select>
+      </div>
+
+        <button type="submit" class="Agendar">Agendar</button>
+
+      </form>
+    </main>
+    <footer>
+      <div class="contenido-pie-de-pagina">
+        <p>&copy; 2026 Dentooth System.</p>
+        <div class="creditos">
+          <span>Desarrollado por: Carlos Fernando Muñoz</span>
+          <img
+            src="../Imagenes/fasm tech.png"
+            alt="Fasmtech-logo"
+            class="Fasmtech-logo"
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="../public/usuario.js"></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentooth System</title>
+    <link rel="stylesheet" href="../public/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado Principal con el Botón Home funcional -->
+    <header>
+        <button class="Home" type="button" title="Volver al inicio">
+            <img src="../Imagenes/Diente.png" alt="Home">
+        </button>
+        <h1 class="Titulo-principal">Dentooth System</h1>
+    </header>
+
+    <!-- Contenedor Principal (Organiza el menú lateral y el panel derecho en dos columnas) -->
+    <main class="Contenido">
+
+        <!-- Menú Lateral del Odontólogo -->
+        <nav class="Menu-odontologo">
+            <h3>Odontólogo</h3>
+            <ul>
+                <li><a href="#Mi_Agenda">Mi agenda</a></li>
+                <li><a href="#Mis_Pacientes">Mis pacientes</a></li>
+                <li><a href="#Documentos">Documentos</a></li>
+                <li><a href="#Reportes">Reportes</a></li>
+            </ul>
+        </nav>
+
+        <!-- Panel de Pestañas Derecho -->
+        <div class="panel-odontologo-derecho"> 
+            
+            <!-- Botones / Pestañas de Navegación -->
+            <nav class="pestañas-encabezado" role="tablist">
+                <button type="button" class="tabla-btn-activo" data-tab="tab-paciente">Paciente</button>
+                <button type="button" class="tabla-btn" data-tab="tab-historia">Historia clinica</button>
+                <button type="button" class="tabla-btn" data-tab="tab-odontograma">Odontograma</button>
+                <button type="button" class="tabla-btn" data-tab="tab-tratamientos">Tratamientos</button>
+            </nav>
+        
+            <!-- Contenedor de las Secciones de las Pestañas -->
+            <div class="pestanas-contenido">
+
+                <!-- Pestaña 1: Paciente -->
+                <section id="tab-paciente" class="tab-panel activo">
+                    <h4 class="titulo-paciente">Paciente en atencion: <span id="datos-nombre">Paciente</span></h4>
+
+                    <div class="datos-paciente">
+                        <p><strong>Nombre:</strong> <span id="datos-nombre-val">Paciente</span></p>
+                        <p><strong>Identificacion:</strong> <span id="datos-identificacion">84166--.TI C.C</span></p>
+                        <p><strong>Direccion:</strong> <span id="datos-direccion">calle carrera</span></p>
+                        <p><strong>Celular:</strong> <span id="datos-celular">30-----</span></p>
+                        <p><strong>Edad:</strong> <span id="datos-edad">00 años</span></p>
+                    </div>
+
+                    <div class="acciones-odontologo">
+                        <button type="button" class="btn-actualizar">Actualizar datos</button>
+                    </div>
+                </section>
+
+                <!-- Pestaña 2: Historia Clínica -->
+                <section id="tab-historia" class="tab-panel">
+                    <h3>Historia clínica</h3>
+                    <p>Contenido de la historia clínica...</p>
+                </section>
+
+                <!-- Pestaña 3: Odontograma -->
+                <section id="tab-odontograma" class="tab-panel">
+                    <h3>Odontograma</h3>
+                    <p>Esquema dental interactivo...</p>
+                </section>
+
+                <!-- Pestaña 4: Tratamientos -->
+                <section id="tab-tratamientos" class="tab-panel">
+                    <h3>Tratamientos</h3>
+                    <p>Lista de procedimientos y cotizaciones...</p>
+                </section>
+
+            </div> <!-- Fin .pestanas-contenido -->
+        </div> <!-- Fin .panel-odontologo-derecho -->
+
+    </main> <!-- Fin .Contenido -->
+
+    <script src="script.js"></script>
+</body>
+</html>

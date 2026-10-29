@@ -1,0 +1,48 @@
+========================================================================
+                 DENTOOTH SYSTEM - INSTRUCCIONES DE USO
+========================================================================
+
+Desarrollado por: Carlos Fernando Muñoz
+Proyecto: Sistema de Gestión Odontológica (Dentooth System)
+Versión: Frontend Demo Functional (HTML5, CSS3, JavaScript)
+
+------------------------------------------------------------------------
+1. ESTRUCTURA Y ARCHIVOS DE LA ENTREGA
+------------------------------------------------------------------------
+- index.html      : Pantalla principal de Inicio de Sesión (Login).
+- usuario.html    : Vista del módulo del Paciente.
+- asistente.html  : Vista del módulo de Asistente / Recepción.
+- styles.css      : Hoja de estilos responsiva del sistema.
+- main.js         : Lógica de autenticación automática y redirección.
+- Imagenes/       : Carpeta con los recursos gráficos del sistema.
+
+------------------------------------------------------------------------
+2. INSTRUCCIONES PARA PROBAR EL SISTEMA
+------------------------------------------------------------------------
+1. Abra el archivo 'index.html' en cualquier navegador web moderno
+   (Google Chrome, Microsoft Edge, Firefox, etc.).
+
+2. El sistema cuenta con autenticación y detección automática de roles
+   según el usuario ingresado.
+
+3. CASOS DE PRUEBA (Credenciales simuladas):
+
+   A) ACCESO COMO PACIENTE:
+      - Usuario   : fernando (o cualquier cédula/nombre de paciente)
+      - Contraseña: 123 (o cualquier contraseña)
+      - Resultado : El sistema identifica el rol y redirige 
+                    automáticamente a 'usuario.html'.
+
+   B) ACCESO COMO ASISTENTE / RECEPCIÓN:
+      - Usuario   : asistente (o 'admin' / 'recepcion')
+      - Contraseña: 123 (o cualquier contraseña)
+      - Resultado : El sistema detecta el perfil administrativo y 
+                    redirige automáticamente a 'asistente.html'.
+
+------------------------------------------------------------------------
+3. NAVEGACIÓN Y CIERRE DE SESIÓN
+------------------------------------------------------------------------
+- Al hacer clic en el botón del logotipo (el diente en el header), 
+  el sistema limpia la sesión activa en el navegador y regresa a la
+  pantalla principal 'index.html'.
+========================================================================
